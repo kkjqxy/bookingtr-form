@@ -18,8 +18,7 @@ form.addEventListener('submit', function(event) {
     const booking = {name, phone, date, note};
     localStorage.setItem('bookingDate', JSON.stringify(booking));
 
-const token = '8077916668:AAFbom_nF6uuFuTvmrHKu4w-pZVs0UgPg7w';
-const chatId = '607061237';
+    const chatId = '607061237';
 
 const message = `
 🔔 Новая заявка!
@@ -29,7 +28,7 @@ const message = `
 📝 Комментарий: ${note || '-'}
 `;
 
-fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+fetch(`https://script.google.com/macros/s/AKfycbwNtZILNwkaFrjjgV6dOUq-7lEnqqcSpm6utPtvMxfv65eneaDYsQapyEuufbR-fgX-DQ/exec`, {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
